@@ -1,5 +1,5 @@
 # One Spin LLG Solver
- Solves LLG using RK4, RK2 or Euler methods.
+ Solves LLG using RK4, RK2 or Euler methods.\n
  To change the integration method, go to `main.c` and in the `#include "method"` change `method` for the wanted integration method.
  The animation is created by `cria_anim.py`. To choose the animation duration, go to `cria_anim.py` and change the call method `faz(duration)` with the desired duration.
  In the animation, the red arrow is the external Magnetic Field and the black arrow is the Spin vector (magnetization vector over magnetization norm).
