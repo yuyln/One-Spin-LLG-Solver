@@ -55,5 +55,5 @@ ax.set_zlabel("Z");
 n, tmax, corte = pega_dados("data.dat");
 # vec2 vec1 vec2 vec2 vec1 vec1
 colors = [(0, 0, 0), (1, 0, 0), (0, 0, 0), (0, 0, 0), (1, 0, 0), (1, 0, 0)]
-b = ax.quiver(*pegavec(100), colors=colors, linewidth=5);
+b = ax.quiver(*pegavec(0), colors=colors, linewidth=5);
 faz(10);
