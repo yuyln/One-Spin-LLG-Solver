@@ -46,9 +46,9 @@ def faz(tempo):
 colunas = le_arq("out.dat");
 field = le_arq("field.dat");
 fig, ax = cria([10, 10]);
-ax.set_xlim([min(min(zip(colunas[0], field[0]))), max(max(zip(colunas[0], field[0])))]);
-ax.set_ylim([min(min(zip(colunas[1], field[1]))), max(max(zip(colunas[1], field[1])))]);
-ax.set_zlim([min(min(zip(colunas[2], field[2]))), max(max(zip(colunas[2], field[2])))]);
+ax.set_xlim([min(min(zip(colunas[0], field[0], [0 for i in range(len(colunas[0]))]))), max(max(zip(colunas[0], field[0])))]);
+ax.set_ylim([min(min(zip(colunas[1], field[1], [0 for i in range(len(colunas[0]))]))), max(max(zip(colunas[1], field[1])))]);
+ax.set_zlim([min(min(zip(colunas[2], field[2], [0 for i in range(len(colunas[0]))]))), max(max(zip(colunas[2], field[2])))]);
 ax.set_xlabel("X");
 ax.set_ylabel("Y");
 ax.set_zlabel("Z");
@@ -56,4 +56,5 @@ n, tmax, corte = pega_dados("data.dat");
 # vec2 vec1 vec2 vec2 vec1 vec1
 colors = [(0, 0, 0), (1, 0, 0), (0, 0, 0), (0, 0, 0), (1, 0, 0), (1, 0, 0)]
 b = ax.quiver(*pegavec(0), colors=colors, linewidth=5);
+#plt.show()
 faz(10);
