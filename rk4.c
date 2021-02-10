@@ -70,9 +70,9 @@ void* calccampo(void *k){
 
 void* calccampoeff(){
 	calcvect((void*)SetParam(aux, H, saida));
-	Heff->x = H->x + lambda * saida->x;
-	Heff->y = H->y + lambda * saida->y;
-	Heff->z = H->z + lambda * saida->z;
+	Heff->x = H->x - lambda * saida->x;
+	Heff->y = H->y - lambda * saida->y;
+	Heff->z = H->z - lambda * saida->z;
 }
 
 void* calcvect(void *arg){

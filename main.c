@@ -8,9 +8,5 @@ int main(int qnt, char*argsv[]){
 	inicia();
 	Dados();
 	Integra();
-	calccampo((void*)taux);
-	//calccampoeff();
-	Calcdsdt();
-	//system("python cria_anim.py");
 	return 0;
 }
